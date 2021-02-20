@@ -1,5 +1,5 @@
 # Universidad Modular Abierta (Santa Ana)
-## Programacaión II Ciclo I/2021
+## Programación II Ciclo I/2021
 Repositorio de ejemplos propuestos en clase.
 ### Unidad 1
  * [Unidad 1a](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad1a "Unidad 1a") 23-1-2021
