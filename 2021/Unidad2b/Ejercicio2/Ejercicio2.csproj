@@ -93,5 +93,41 @@
   <ItemGroup>
     <None Include="Resources\Close_8x_16x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bold_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italic_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underline_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontColor_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextLeftJustify_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextCenter_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextRightJustify_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_grey_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo_grey_16x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
