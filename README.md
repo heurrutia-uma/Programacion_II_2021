@@ -9,3 +9,4 @@ Repositorio de ejemplos propuestos en clase.
 ### Unidad 2
  * [Unidad 2a](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad2a "Unidad 2a") 20-2-2021
  * [Unidad 2b](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad2b "Unidad 2b") 27-2-2021
+ * [Unidad 2c](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad2b "Unidad 2c") 6-3-2021
