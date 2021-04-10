@@ -11,10 +11,17 @@ namespace BaseDatos.Clases
         private string _nombreBD;
         private SqlConnection _sqlConnection = null;
 
-        public AdminBD(string instanciaSQL, string nombreBD)
+        public AdminBD(string instanciaSQL = "", string nombreBD = "")
         {
-            _instanciaSQL = instanciaSQL;
-            _nombreBD = nombreBD;
+            if (String.IsNullOrEmpty(instanciaSQL))
+                _instanciaSQL = Properties.Settings.Default.InstaciaSQLServer;
+            else
+                _instanciaSQL = instanciaSQL;
+
+            if (String.IsNullOrEmpty(nombreBD))
+                _nombreBD = Properties.Settings.Default.BaseDatos;
+            else
+                _nombreBD = nombreBD;
         }
 
         private string ObtenerStringDeConexion()

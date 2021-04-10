@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bodega\FrmBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\FrmBodega.Designer.cs">
+      <DependentUpon>FrmBodega.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bodega\FrmBodegaTipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,7 +64,15 @@
     <Compile Include="Bodega\FrmBodegaTipo_Edicion.Designer.cs">
       <DependentUpon>FrmBodegaTipo_Edicion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bodega\FrmBodega_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\FrmBodega_Lista.Designer.cs">
+      <DependentUpon>FrmBodega_Lista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\AdminBD.cs" />
+    <Compile Include="Clases\AdminFormulario.cs" />
+    <Compile Include="Clases\UMABD.cs" />
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +81,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sucursal\FrmSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sucursal\FrmSucursal.Designer.cs">
+      <DependentUpon>FrmSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursal\FrmSucursal_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sucursal\FrmSucursal_Lista.Designer.cs">
+      <DependentUpon>FrmSucursal_Lista.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bodega\FrmBodega.resx">
+      <DependentUpon>FrmBodega.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bodega\FrmBodegaTipo.resx">
       <DependentUpon>FrmBodegaTipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bodega\FrmBodegaTipo_Edicion.resx">
       <DependentUpon>FrmBodegaTipo_Edicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodega\FrmBodega_Lista.resx">
+      <DependentUpon>FrmBodega_Lista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -85,6 +117,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sucursal\FrmSucursal.resx">
+      <DependentUpon>FrmSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursal\FrmSucursal_Lista.resx">
+      <DependentUpon>FrmSucursal_Lista.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="Script_SQL\UMA2.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Articulo\" />
+    <Folder Include="Cliente\" />
+    <Folder Include="Venta\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

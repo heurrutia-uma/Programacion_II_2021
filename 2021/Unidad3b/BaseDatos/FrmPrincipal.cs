@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BaseDatos.Bodega;
+using BaseDatos.Clases;
+using BaseDatos.Sucursal;
+using System;
 using System.Windows.Forms;
-using BaseDatos.Bodega;
 
 namespace BaseDatos
 {
@@ -20,9 +15,17 @@ namespace BaseDatos
 
         private void TipoDeBodegasMenuItem_Click(object sender, EventArgs e)
         {
-            FrmBodegaTipo frmBodegaTipo = new FrmBodegaTipo();
-            frmBodegaTipo.MdiParent = this;
-            frmBodegaTipo.Show();
+            AdminFormulario.MostrarFormulario(new FrmBodegaTipo());
+        }
+
+        private void BodegasMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminFormulario.MostrarFormulario(new FrmBodega_Lista());
+        }
+
+        private void SucursalMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminFormulario.MostrarFormulario(new FrmSucursal_Lista());
         }
     }
 }

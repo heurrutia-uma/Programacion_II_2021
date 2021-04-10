@@ -15,7 +15,7 @@ namespace BaseDatos.Bodega
             InitializeComponent();
 
             _id = id;
-            _admBD = new AdminBD(@"R90NKLWW\SQLEXPRESS", "UMA2021");
+            _admBD = new AdminBD();
         }
 
         private void FrmBodegaTipo_Edicion_Load(object sender, EventArgs e)

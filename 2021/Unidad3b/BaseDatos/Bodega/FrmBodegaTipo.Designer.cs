@@ -48,6 +48,7 @@ namespace BaseDatos.Bodega
             this.GrdListaBodega.Location = new System.Drawing.Point(12, 37);
             this.GrdListaBodega.MultiSelect = false;
             this.GrdListaBodega.Name = "GrdListaBodega";
+            this.GrdListaBodega.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GrdListaBodega.Size = new System.Drawing.Size(360, 183);
             this.GrdListaBodega.TabIndex = 0;
             // 

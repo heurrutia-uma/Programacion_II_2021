@@ -15,7 +15,7 @@ namespace BaseDatos.Bodega
 
         private void FrmBodegaTipo_Load(object sender, EventArgs e)
         {
-            AdminBD admBD = new AdminBD(@"R90NKLWW\SQLEXPRESS", "UMA2021");
+            AdminBD admBD = new AdminBD();
 
             string comandoSql = "SELECT * FROM BodegaTipo";
 
@@ -66,7 +66,7 @@ namespace BaseDatos.Bodega
             {
                 if (MessageBox.Show("¿Está seguro de qué eliminar el registro seleccionado?", "Tipo de Bodega", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    AdminBD admBD = new AdminBD(@"R90NKLWW\SQLEXPRESS", "UMA2021");
+                    AdminBD admBD = new AdminBD();
                     string comandoSql = $"DELETE FROM BodegaTipo WHERE Id={id}";
 
                     admBD.AbrirConexion();
