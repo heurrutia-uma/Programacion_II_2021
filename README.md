@@ -14,3 +14,4 @@ Repositorio de ejemplos propuestos en clase.
  * [Unidad 3a](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad3a "Unidad 3a") 20-3-2021
  * [Unidad 3b](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad3b "Unidad 3b") 27-3-2021
  * [Unidad 3b](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad3b "Unidad 3b") 10-4-2021
+ * [Unidad 3d](https://github.com/heurrutia-uma/Programacion_II/tree/main/2021/Unidad3d "Unidad 3d") 27-4-2021
