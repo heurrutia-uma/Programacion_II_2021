@@ -31,14 +31,24 @@ namespace Reportes
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.UMA2021DataSet = new Reportes.UMA2021DataSet();
             this.TransaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.UMA2021DataSet = new Reportes.UMA2021DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.TransaccionTableAdapter = new Reportes.UMA2021DataSetTableAdapters.TransaccionTableAdapter();
             this.TransaccionDetalleTableAdapter = new Reportes.UMA2021DataSetTableAdapters.TransaccionDetalleTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.UMA2021DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransaccionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UMA2021DataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // TransaccionBindingSource
+            // 
+            this.TransaccionBindingSource.DataMember = "Transaccion";
+            this.TransaccionBindingSource.DataSource = this.UMA2021DataSet;
+            // 
+            // UMA2021DataSet
+            // 
+            this.UMA2021DataSet.DataSetName = "UMA2021DataSet";
+            this.UMA2021DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -52,16 +62,6 @@ namespace Reportes
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // UMA2021DataSet
-            // 
-            this.UMA2021DataSet.DataSetName = "UMA2021DataSet";
-            this.UMA2021DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // TransaccionBindingSource
-            // 
-            this.TransaccionBindingSource.DataMember = "Transaccion";
-            this.TransaccionBindingSource.DataSource = this.UMA2021DataSet;
             // 
             // TransaccionTableAdapter
             // 
@@ -81,8 +81,8 @@ namespace Reportes
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista Previa";
             this.Load += new System.EventHandler(this.FrmRepTransaccion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.UMA2021DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransaccionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UMA2021DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -25,7 +25,7 @@ namespace Reportes.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("R90NKLWW\\SQLEXPRESS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LOCALHOST\\SQLEXPRESS")]
         public string InstanciaSQLServer {
             get {
                 return ((string)(this["InstanciaSQLServer"]));

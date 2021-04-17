@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="InstanciaSQLServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">R90NKLWW\SQLEXPRESS</Value>
+      <Value Profile="(Default)">LOCALHOST\SQLEXPRESS</Value>
     </Setting>
     <Setting Name="BaseDatos" Type="System.String" Scope="User">
       <Value Profile="(Default)">UMA2021</Value>
